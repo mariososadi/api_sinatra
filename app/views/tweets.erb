@@ -1,0 +1,13 @@
+  <h4>@<%=@user.handle%></h4>
+  <h5>Tweets:</h5><br>
+
+  <% @display.each do |x| %>
+  <% if x.user_id == @user.id %>
+    <div class="well" style="background-color: #DCDCDC"><p>
+    <%=x.tweet %>
+    </p></div>
+    <br>
+    <%end%>
+  <%end%>
+
+  <br>
