@@ -1,11 +1,18 @@
 <h1><i class="fa fa-twitter">&nbsp;</i>Twitter API</h1>
-  <h4>Welcome to Codeacamp Twitter API.</h4>
+  <h4>Welcome to Codeacamp Twitter API.</h4><br>
+
     <p>Please, enter the user name you want to look for.</p>
     <p id="para"></p>
-    <br>
       <form id ="forma" action="/fetch" method="post">
         <br>
         @&nbsp;<input id="user" type="text" name="handle" placeholder="Type here..."><br><br>
         <input class="btn btn-primary" type="submit" value="View Tweets">
+      </form><br><br>
+      <p>Please @mariososadi, enter a new tweet (Max. 140 Characters)</p>
+      <p id="para2"></p>
+      <form id ="forma2" action="/tweet" method="post">
+        <br>
+        <input id ="tweet" type="text" name="tweet_text" placeholder="Type here..."><br><br>
+        <input id ="btn" class="btn btn-primary" type="submit" value="Tweet">
       </form>
 

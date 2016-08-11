@@ -52,3 +52,18 @@ get '/:handle' do
   erb :tweets
 
 end
+
+post '/tweet' do
+  if params[:tweet_text] == "" 
+    redirect '/'
+  else 
+    @tweet = params[:tweet_text]
+    CLIENT.update(@tweet)
+    erb :index , :layout => false
+  end
+    # Recibe el input del usuario
+
+    # Crea el tweet utilizando la API de Twitter
+
+    # Regresa al usuario el tweet o un mensaje de EXITO o ERROR
+end

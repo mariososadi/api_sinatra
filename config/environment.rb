@@ -39,7 +39,7 @@ require APP_ROOT.join('config', 'database')
 # Llaves de API de twitter
 CLIENT = Twitter::REST::Client.new do |config|
   config.consumer_key        = 
-  config.consumer_secret     = 
-  config.access_token        = 
-  config.access_token_secret = 
+  config.consumer_secret     = ''
+  config.access_token        = ''
+  config.access_token_secret = ''
 end
